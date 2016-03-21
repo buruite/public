@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+.container-fluid{padding-right: 0px; padding-left: 0px;overflow: hidden;}
+body{background-color: #EBEBEB;font-family: Microsoft YaHei;}
+.navbar{background-color: #4AA3DB;max-height: 38px;min-height: 38px;cursor: pointer;}
+.navbar-fixed-top span{ line-height:38px;color:#FFFFFF;font-size: 16px;font-family: Microsoft YaHei;}
+.navbar-fixed-top img{width: 20px;height: 20px;padding-bottom: 2px;} 
