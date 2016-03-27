@@ -35,3 +35,12 @@ body{font-family: Microsoft YaHei;}
 .right_hot{margin-top: 20px;}
 .right_hot .badge{min-width: 50px;padding: 5px 10px;margin-top: 10px;background-color: #ffffff;border: 1px solid #daecf5;color: #428bca;}
 .right_hot .badge:hover{color: #ffffff;background-color: #4169E1;}
+.back_to_top{display:none; position:fixed;bottom:100px;right:180px;width: 45px;height: 45px;border-radius: 4px;border: 1px solid #428bca;background-color:#4AA3DB;text-align: center; line-height: 45px;font-size: 28px;color: #ffffff;}
+.back_to_top a{ text-decoration:none; color: #ffffff;-moz-transition:color 1s;-webkit-transition:color 1s;-o-transition:color 1s; }
+.back_to_top a:hover{color:#FFF8DC;}
+.index_bottom{text-align: center;margin-top: 20px;font-size: 12px;float: left;margin-bottom: 20px;width: 850px;}
+.list-group-item:hover{z-index: 2;color: #fff;background-color: #428bca;border-color: #428bca;}
+.list-group-item:hover > .badge{color: #428bca;background-color: #ffffff;}
+a.list-group-item:hover, a.list-group-item:focus {color: #fff; text-decoration: none;background-color: #428bca; }
+
+

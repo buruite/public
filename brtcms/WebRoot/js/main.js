@@ -12,7 +12,20 @@ $(function(){
 		//$(this).css({"color":"#ffffff","background-color":"#4AA3DB"});
 	});
 	$('[data-toggle="popover"]').popover();
-	
+	$(window).scroll(function(){  
+        if ($(window).scrollTop()>500){  
+            $(".back_to_top").fadeIn(500);  
+        }  
+        else  
+        {  
+            $(".back_to_top").fadeOut(500);  
+        }  
+    });  
+    //当点击跳转链接后，回到页面顶部位置  
+    $(".back_to_top").click(function(){  
+        $('body,html').animate({scrollTop:0},10);  
+        return false;  
+    });
 });
 
 function person(){
