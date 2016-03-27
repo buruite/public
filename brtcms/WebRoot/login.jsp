@@ -19,6 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 	<style type="text/css">
 		body{background-image: url("image/login.jpg");-moz-background-size:100% 100%;background-size:100% 100%;background-repeat:  no-repeat;background-position: center;}
 		.login{border-radius: 6px;border: 1px solid rgba(0,0,0,.2);width: 400px;height: 300px;background-color: #ffffff;text-align: center;margin:0 auto;vertical-align:middle;text-align: center;margin-top: 10%;}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>首页</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	
+  </head>
+  
+  <body>
+  	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  				<nav class="navbar navbar-fixed-top" role="navigation">
+				  <div class="container">
+				  	<div class = "row">
+				  		<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				  			<div class="navbar_top_left">
+				  				<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp;布瑞特
+							</div>
+							<div class="navbar_top_middle">
+								<span>首页</span>
+								<span>方案</span>
+								<span>需求</span>
+							</div>
+							<div class="navbar_top_right">
+								<div style="float: left;"><button type="button" class="btn btn-warning btn-sm">发布</button></div>
+								<div class="button_person" data-placement="bottom" data-toggle="popover" data-html="true"
+									 data-content="<div class='person_index'>
+									 				  <div class='person_index_my' onclick='person()'><span class='glyphicon glyphicon-user' aria-hidden='true'></span>&nbsp;我的主页</div>
+									 				  <div class='person_index_my' onclick='person()'><span class='glyphicon glyphicon-comment' aria-hidden='true'></span>&nbsp;消息&nbsp;<span class='badge'>8</span></div>
+									 				  <div class='person_index_my' onclick='personsetting()'><span class='glyphicon glyphicon-cog' aria-hidden='true'></span>&nbsp;设置</div>
+									 				  <div class='person_index_my' onclick='exit()'><span class='glyphicon glyphicon-off'></span>&nbsp;退出</div>
+									 			  </div>">
+									<img src="image/man.jpg" class="img-circle">
+									<span>谢永兵&nbsp;</span>
+									<span class="badge">8</span>
+								</div>
+								<div class="button_login" style="display: none;">
+									<button type="button" class="btn btn-success btn-xs">登录</button>
+									<button type="button" class="btn btn-warning btn-xs">注册</button>
+								</div>
+							</div>
+				  		</div>
+				  	</div>
+				  </div>
+				</nav>
+				<div class="index_middle" align="center">
+					<div class="index_middle_main">
+						<div class="index_middle_main_left">
+							<div class="index_middle_main_left_title">
+								行业领域
+							</div>
+							<div class="list-group">
+							  <a href="#" class="list-group-item active">
+							  <span class="badge">14</span>
+							    信息产业
+							  </a>
+							  <a href="#" class="list-group-item"><span class="badge">5</span>电子电工</a>
+							  <a href="#" class="list-group-item"><span class="badge">7</span>机械机电</a>
+							  <a href="#" class="list-group-item"><span class="badge">16</span>建筑建材</a>
+							  <a href="#" class="list-group-item"><span class="badge">45</span>石油化工</a>
+							  <a href="#" class="list-group-item"><span class="badge">67</span>水利水电</a>
+							  <a href="#" class="list-group-item"><span class="badge">13</span>交通运输</a>
+							  <a href="#" class="list-group-item"><span class="badge">12</span>医药卫生</a>
+							  <a href="#" class="list-group-item"><span class="badge">0</span>安全防护</a>
+							  <a href="#" class="list-group-item"><span class="badge">8</span>农林牧渔</a>
+							</div>
+						</div>
+						<div class="index_middle_main_middle">
+							<div class="alert alert-warning alert-dismissible" role="alert">
+							  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  <strong>注意!</strong>本网站严禁发布含淫秽色情和反动内容的信息。
+							</div>
+							<ul class="nav nav-tabs index_middle_main_middle_top">
+							  <li role="presentation" class="active"><a href="#">动态</a></li>
+							  <li role="presentation"><a href="#">精华</a></li>
+							</ul>
+							<div class="index_middle_main_middle_msg">
+								<div class="message_top" align="left">
+									<div class="page-header message_header">
+									  <span>[信息产业]</span> App架构设计经验谈:接口的设计
+									</div>
+									<div class="row message_main">
+										<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+											<img src="image/man.jpg" class='img-thumbnail'>
+										</div>
+										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
+											<a href="#">...显示全部</a>
+										</div>
+									</div>
+									<div class="message_bottom">
+										<a href="#">谢永兵</a>
+										<a href="#"><span class='glyphicon glyphicon-comment' aria-hidden='true'></span>&nbsp;评论(8)</a>
+										<span>2016-03-26 18:47</span>		
+									</div>
+								</div>
+								<div class="message_top" align="left">
+									<div class="page-header message_header">
+									  <span>[信息产业]</span> App架构设计经验谈:接口的设计
+									</div>
+									<div class="row message_main">
+										<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+											<img src="image/man.jpg" class='img-thumbnail'>
+										</div>
+										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
+											<a href="#">...显示全部</a>
+										</div>
+									</div>
+									<div class="message_bottom">
+										<a href="#">谢永兵</a>
+										<a href="#"><span class='glyphicon glyphicon-comment' aria-hidden='true'></span>&nbsp;评论(8)</a>
+										<span>2016-03-26 18:47</span>		
+									</div>
+								</div>
+								<div class="message_top" align="left">
+									<div class="page-header message_header">
+									  <span>[信息产业]</span> App架构设计经验谈:接口的设计
+									</div>
+									<div class="row message_main">
+										<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+											<img src="image/man.jpg" class='img-thumbnail'>
+										</div>
+										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
+											<a href="#">...显示全部</a>
+										</div>
+									</div>
+									<div class="message_bottom">
+										<a href="#">谢永兵</a>
+										<a href="#"><span class='glyphicon glyphicon-comment' aria-hidden='true'></span>&nbsp;评论(8)</a>
+										<span>2016-03-26 18:47</span>		
+									</div>
+								</div>
+								<div class="message_top" align="left">
+									<div class="page-header message_header">
+									  <span>[信息产业]</span> App架构设计经验谈:接口的设计
+									</div>
+									<div class="row message_main">
+										<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+											<img src="image/man.jpg" class='img-thumbnail'>
+										</div>
+										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
+											<a href="#">...显示全部</a>
+										</div>
+									</div>
+									<div class="message_bottom">
+										<a href="#">谢永兵</a>
+										<a href="#"><span class='glyphicon glyphicon-comment' aria-hidden='true'></span>&nbsp;评论(8)</a>
+										<span>2016-03-26 18:47</span>		
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="index_middle_main_right">
+							<div class="right_search">
+								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="搜索相关信息">
+								<button type="button" class="btn btn-primary btn-xs">
+									<span class="glyphicon glyphicon-search" title="搜索" aria-hidden="true"></span>
+								</button>
+							</div>
+							<div class="right_hot">
+								<div class="panel panel-primary">
+								  <div class="panel-heading">热门信息</div>
+								  <div class="panel-body">
+								    <a href="#"><span class="badge">java</span></a>
+								    <a href="#"><span class="badge">c</span></a>
+								    <a href="#"><span class="badge">c++</span></a>
+								    <a href="#"><span class="badge">电脑维修</span></a>
+								    <a href="#"><span class="badge">软件测试</span></a>
+								  </div>
+								</div>
+								<div class="panel panel-primary">
+								  <div class="panel-heading">信息产业</div>
+								  <div class="panel-body">
+								    <a href="#"><span class="badge">java</span></a>
+								    <a href="#"><span class="badge">c</span></a>
+								    <a href="#"><span class="badge">c++</span></a>
+								    <a href="#"><span class="badge">电脑维修</span></a>
+								    <a href="#"><span class="badge">软件测试</span></a>
+								    <a href="#"><span class="badge">java</span></a>
+								    <a href="#"><span class="badge">c</span></a>
+								    <a href="#"><span class="badge">c++</span></a>
+								    <a href="#"><span class="badge">电脑维修</span></a>
+								    <a href="#"><span class="badge">软件测试</span></a>
+								    <a href="#"><span class="badge">java</span></a>
+								    <a href="#"><span class="badge">c</span></a>
+								    <a href="#"><span class="badge">c++</span></a>
+								    <a href="#"><span class="badge">电脑维修</span></a>
+								    <a href="#"><span class="badge">软件测试</span></a>
+								    <a href="#"><span class="badge">java</span></a>
+								    <a href="#"><span class="badge">c</span></a>
+								    <a href="#"><span class="badge">c++</span></a>
+								    <a href="#"><span class="badge">电脑维修</span></a>
+								    <a href="#"><span class="badge">软件测试</span></a>
+								    <a href="#"><span class="badge">java</span></a>
+								    <a href="#"><span class="badge">c</span></a>
+								    <a href="#"><span class="badge">c++</span></a>
+								    <a href="#"><span class="badge">电脑维修</span></a>
+								    <a href="#"><span class="badge">软件测试</span></a>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+  			</div>
+  		</div>
+  	</div>
+  </body>
+</html>

@@ -1,6 +1,37 @@
 @CHARSET "UTF-8";
 .container-fluid{padding-right: 0px; padding-left: 0px;overflow: hidden;}
-body{background-color: #EBEBEB;font-family: Microsoft YaHei;}
-.navbar{background-color: #4AA3DB;max-height: 38px;min-height: 38px;cursor: pointer;}
-.navbar-fixed-top span{ line-height:38px;color:#FFFFFF;font-size: 16px;font-family: Microsoft YaHei;}
-.navbar-fixed-top img{width: 20px;height: 20px;padding-bottom: 2px;} 
+body{font-family: Microsoft YaHei;}
+.navbar{background-color: #4AA3DB;max-height: 50px;min-height: 50px;}
+.navbar_top_left{color: #ffffff;font-size: 30px;line-height: 50px;float: left;}
+.navbar_top_left span{font-size: 18px;}
+.navbar_top_middle{float: left;margin-left: 50px;font-size: 16px;color: #ffffff;line-height: 50px;}
+.navbar_top_middle span{margin-left: 25px;cursor: pointer;}
+.navbar_top_right{float: right;line-height: 50px;cursor: pointer}
+.button_person{cursor: pointer}
+.navbar_top_right{width: 300px;text-align: center;}
+.navbar_top_right button{margin-left: 10px;}
+.navbar_top_right .badge{background-color: #d9534f;}
+.button_person img{width: 35px;height: 35px;}
+.button_person span{color: #ffffff;}
+.person_index_my{line-height: 35px;padding-left: 10px;padding-right: 10px;border: 0px solid #4AA3DB;border-radius: 4px;}
+.person_index_my:hover{background-color: #4AA3DB;color: #ffffff}
+.index_middle{margin-top: 60px;}  
+.index_middle_main{max-width: 1300px;}
+.index_middle_main_left{width: 200px;float: left;}
+.index_middle_main_left_title{font-size: 16px;line-height: 50px;font-weight: 700;}
+.badge{background-color: #5cb85c;}
+.index_middle_main_middle{width: 850px;float: left;vertical-align: middle;text-align: center;padding-left: 40px;}
+.index_middle_main_middle_top{height: 42px;margin-top: 20px;}
+.message_header{font-size: 18px;font-weight: 700;margin-top: 25px;}
+.message_header span{color: #eea236;}
+.message_main{height: 118px;}  
+.message_bottom{font-size: 12px;color: #999;margin-left: 70%;}
+.message_bottom a{font-size: 12px;color: #999;padding: 3px 7px;border-radius: 4px;}
+.message_bottom a:hover{background-color: #eff6fa;color: #698ebf;}
+.index_middle_main_right{width: 220px;float: right;}
+.right_search{height: 30px;}
+.right_search input{height: 30px;width: 76%;float: left;}
+.right_search button{height: 30px;width: 20%;float: left;margin-left: 5px;}
+.right_hot{margin-top: 20px;}
+.right_hot .badge{min-width: 50px;padding: 5px 10px;margin-top: 10px;background-color: #ffffff;border: 1px solid #daecf5;color: #428bca;}
+.right_hot .badge:hover{color: #ffffff;background-color: #4169E1;}
