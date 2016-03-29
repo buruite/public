@@ -31,21 +31,23 @@
 								<span>需求</span>
 							</div>
 							<div class="navbar_top_right">
-								<div style="float: left;"><button type="button" class="btn btn-warning btn-sm">发布</button></div>
-								<div class="button_person" data-placement="bottom" data-toggle="popover" data-html="true"
-									 data-content="<div class='person_index'>
-									 				  <div class='person_index_my' onclick='person()'><span class='glyphicon glyphicon-user' aria-hidden='true'></span>&nbsp;我的主页</div>
-									 				  <div class='person_index_my' onclick='person()'><span class='glyphicon glyphicon-comment' aria-hidden='true'></span>&nbsp;消息&nbsp;<span class='badge'>8</span></div>
-									 				  <div class='person_index_my' onclick='personsetting()'><span class='glyphicon glyphicon-cog' aria-hidden='true'></span>&nbsp;设置</div>
-									 				  <div class='person_index_my' onclick='exit()'><span class='glyphicon glyphicon-off'></span>&nbsp;退出</div>
-									 			  </div>">
-									<img src="image/man.jpg" class="img-circle">
-									<span>谢永兵&nbsp;</span>
-									<span class="badge">8</span>
+								<div style="float: left;display: none;"><button type="button" class="btn btn-warning btn-sm">发布</button></div>
+								<div class="person_popover" style="display: none;">
+									<div class="button_person" data-placement="bottom" data-toggle="popover" data-html="true"
+										 data-content="<div class='person_index'>
+										 				  <div class='person_index_my' onclick='person()'><span class='glyphicon glyphicon-user' aria-hidden='true'></span>&nbsp;我的主页</div>
+										 				  <div class='person_index_my' onclick='person()'><span class='glyphicon glyphicon-comment' aria-hidden='true'></span>&nbsp;消息&nbsp;<span class='badge'>8</span></div>
+										 				  <div class='person_index_my' onclick='personsetting()'><span class='glyphicon glyphicon-cog' aria-hidden='true'></span>&nbsp;设置</div>
+										 				  <div class='person_index_my' onclick='exit()'><span class='glyphicon glyphicon-off'></span>&nbsp;退出</div>
+										 			  </div>">
+										<img src="image/man.jpg" class="img-circle">
+										<span>谢永兵&nbsp;</span>
+										<span class="badge">8</span>
+									</div>
 								</div>
-								<div class="button_login" style="display: none;">
-									<button type="button" class="btn btn-success btn-xs">登录</button>
-									<button type="button" class="btn btn-warning btn-xs">注册</button>
+								<div class="button_login" >
+									<button type="button" class="btn btn-success btn-xs" onclick="login()">登录</button>
+									<button type="button" class="btn btn-warning btn-xs" onclick="register()">注册</button>
 								</div>
 							</div>
 				  		</div>
@@ -94,7 +96,7 @@
 										</div>
 										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
-											<a href="#">...显示全部</a>
+											<a href="#">&hellip;显示全部</a>
 										</div>
 									</div>
 									<div class="message_bottom">
@@ -113,7 +115,7 @@
 										</div>
 										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
-											<a href="#">...显示全部</a>
+											<a href="#">&hellip;显示全部</a>
 										</div>
 									</div>
 									<div class="message_bottom">
@@ -132,7 +134,7 @@
 										</div>
 										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
-											<a href="#">...显示全部</a>
+											<a href="#">&hellip;显示全部</a>
 										</div>
 									</div>
 									<div class="message_bottom">
@@ -151,7 +153,7 @@
 										</div>
 										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
-											<a href="#">...显示全部</a>
+											<a href="#">&hellip;显示全部</a>
 										</div>
 									</div>
 									<div class="message_bottom">
@@ -170,7 +172,7 @@
 										</div>
 										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
-											<a href="#">...显示全部</a>
+											<a href="#">&hellip;显示全部</a>
 										</div>
 									</div>
 									<div class="message_bottom">
@@ -189,7 +191,7 @@
 										</div>
 										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
-											<a href="#">...显示全部</a>
+											<a href="#">&hellip;显示全部</a>
 										</div>
 									</div>
 									<div class="message_bottom">
@@ -208,7 +210,7 @@
 										</div>
 										<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 											安全机制的设计 现在，大部分App的接口都采用RESTful架构，RESTFul最重要的一个设计原则就是，客户端与服务器的交互在请求之间是无状态的，也就是说，当涉及到用户状态时，每次请求都要带上身份验证信息。实现上，大部分都采用token的认证方式，一般流程是： 用户用密码登录成功后，服务器返回token给客户端； 客户端将token保存在本地，发起后续的相关请求时，将token发回给服务器；
-											<a href="#">...显示全部</a>
+											<a href="#">&hellip;显示全部</a>
 										</div>
 									</div>
 									<div class="message_bottom">
@@ -305,5 +307,123 @@
   	<div class="back_to_top">
   		<a href="#" title="回到顶部"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
   	</div>
+ 	<div class="modal fade" id="loginModal">
+	  <div class="modal-dialog" style="width: 380px;">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">用户登录</h4>
+	      </div>
+	      <div class="modal-body">
+        	<div class="input-group login_input">
+			  <span class="input-group-addon" id="basic-addon-name"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+			  <input type="text" class="form-control" placeholder="手机号或邮箱" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group login_input">
+			  <span class="input-group-addon" id="basic-addon-password"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+			  <input type="password" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
+			</div>
+			<div class="login_input">
+				<div class="remember_psw">
+					<input type="checkbox"/>
+					<span>记住密码</span>
+				</div>
+				<div class="forget_res">
+					<a href="#">忘记密码？</a>
+					<span>|</span>
+					<a href="">注册</a>
+				</div>
+			</div>
+			<div align="center">
+				<button type="button" class="btn btn-primary index_button">登&nbsp;&nbsp;录</button>
+			</div>
+			<div class="other_account">
+				<div class="other_account_span">其它账号登录</div>
+				<div class="other_account_img">
+					<a href=""><img src="image/qq.jpg"/></a>
+					<a href=""><img src="image/weixin.jpg"/></a>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="registerModal">
+	  <div class="modal-dialog" style="width: 380px;">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">用户注册</h4>
+	      </div>
+	      <div class="modal-body">
+	        <ul class="nav nav-tabs" id="res_tab">
+			  <li role="presentation"  class="active"><a href="#">手机注册</a></li>
+			  <li role="presentation"><a href="#">邮箱注册</a></li>
+			</ul>
+			<div id="pb_res_phone">
+				<div class="input-group login_input">
+				  <span class="input-group-addon" id="basic-addon-res"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+				  <input type="text" class="form-control" placeholder="手机号" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group login_input">
+				  <span class="input-group-addon" id="basic-addon-res"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+				  <input type="password" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group login_input">
+				  <span class="input-group-addon" id="basic-addon-res"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+				  <input type="password" class="form-control" placeholder="确认密码" aria-describedby="basic-addon1">
+				</div>
+				<div class="res_code">
+					<div class="input-group res_input_code">
+					  <span class="input-group-addon" id="basic-addon-res"><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span></span>
+					  <input type="text" class="form-control" placeholder="手机验证码" aria-describedby="basic-addon1">
+					</div>
+					<div class="res_input_send">
+						<button type="button" class="btn btn-warning">获取手机验证码</button>
+					</div>
+				</div>
+				<div class="res_code">
+					<div class="input-group res_input_code">
+					  <span class="input-group-addon" id="basic-addon-res"><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span></span>
+					  <input type="text" class="form-control" placeholder="图片验证码" aria-describedby="basic-addon1">
+					</div>
+					<div class="res_input_send">
+						<img alt="" src="image/yanzhengma.jpg" title="点击切换验证码">
+					</div>
+				</div>
+				<div align="center">
+					<button type="button" class="btn btn-primary index_button">立即注册</button>
+				</div>
+			</div>
+			<div id="pb_res_email" style="display: none;">
+				<div class="input-group login_input">
+				  <span class="input-group-addon" id="basic-addon-res"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+				  <input type="text" class="form-control" placeholder="邮箱地址" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group login_input">
+				  <span class="input-group-addon" id="basic-addon-res"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+				  <input type="password" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group login_input">
+				  <span class="input-group-addon" id="basic-addon-res"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+				  <input type="password" class="form-control" placeholder="确认密码" aria-describedby="basic-addon1">
+				</div>
+				<div class="res_code">
+					<div class="input-group res_input_code">
+					  <span class="input-group-addon" id="basic-addon-res"><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span></span>
+					  <input type="text" class="form-control" placeholder="图片验证码" aria-describedby="basic-addon1">
+					</div>
+					<div class="res_input_send">
+						<img alt="" src="image/yanzhengma.jpg" title="点击切换验证码">
+					</div>
+				</div>
+				<div align="center">
+					<button type="button" class="btn btn-primary index_button">立即注册</button>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
   </body>
 </html>
