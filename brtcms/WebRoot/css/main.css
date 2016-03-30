@@ -6,6 +6,8 @@ body{font-family: Tahoma, Helvetica, "Microsoft Yahei", "微软雅黑", Arial, S
 .navbar_top_left span{font-size: 18px;}
 .navbar_top_middle{float: left;margin-left: 50px;font-size: 16px;color: #ffffff;line-height: 50px;}
 .navbar_top_middle span{margin-left: 25px;cursor: pointer;}
+.navbar_top_middle span a{text-decoration: none;color: #ffffff;}
+.navbar_top_middle span a:hover{color:#EE4000}
 .navbar_top_right{float: right;line-height: 50px;cursor: pointer}
 .button_person{cursor: pointer}
 .navbar_top_right{width: 300px;text-align: center;}
@@ -60,6 +62,25 @@ a.list-group-item:hover, a.list-group-item:focus {color: #fff; text-decoration: 
 .res_input_code{width: 60%;margin-right: 10px;float: left;}
 .res_input_send{float: right;}
 .res_input_send img{width: 120px; height: 35px;}
-
-
+.personal_left{width: 200px;border:  1px solid #ddd;text-align: center;height: 600px;border-radius: 6px; float: left;width: 100%;}
+.personal_left_head img{margin-top: 20px;width: 125px;height: 125px;}
+.personal_left_head label {margin-top: 5px;font-size: 12px;}
+.personal_left_order{float: left;width: 100%;}
+.personal_left_ordermsg{margin-top: 20px;height:30px;border: 1px solid #ddd;border-radius: 6px;line-height: 30px;color:#4AA3DB; cursor: pointer;float: left;width: 100%;}
+.personal_left_ordermsg span{padding-right: 10px;}
+.personal_left_ordermsg:hover{background-color: #4AA3DB;border: 1px solid #4AA3DB;color:#ffffff;}
+.personal_left_ordermsg .badge{float: right;}
+.personal_right{float: left;margin-left: 50px;width: 850px;border-radius: 6px;}
+.personal_right_header{float: left;width: 100%;padding-top: 20px;border-bottom: 1px solid #d58512;height: 50px;}
+.personal_right_title{float: left;margin-left: 20px;font-size: 16px;color: #4AA3DB;}
+.personal_right_title span{margin-right: 5px;}
+.personal_right_tab{margin-top: 60px;}
+.mywatch{width: 100%;border: 1px solid #4AA3DB;margin-top: 20px;border-radius: 6px;height: 100px;}
+.mywatch_title{width: 100%;float: left;font-size: 12px;margin-top: 10px;height: 30px;}
+.mywatch_title_header{float: left;padding-left: 50px;}
+.mywatch_title_header img{width: 18px;height: 18px;}
+.mywatch_title_header a{text-decoration: none;}
+.mywatch_title_header a:hover{color: #eea236;text-decoration: underline;}
+.mywatch_title_date{float: right;padding-right: 50px;}
+.mywatch_derc{width: 100%;float: left;padding-left: 68px;font-size: 12px;padding-right: 50px;text-align: left;}
 

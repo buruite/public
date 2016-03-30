@@ -65,10 +65,10 @@ function register(){
 	$("#registerModal").modal("show");
 }
 function person(){
-	alert("我的主页");
+	window.location.href="mymsg.html";
 }
 function personsetting(){
-	alert("设置");
+	window.location.href="mysetting.html";
 }
 function exit(){
 	alert("退出");

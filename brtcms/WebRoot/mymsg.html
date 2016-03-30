@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>我的主页</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+  </head>
+  
+  <body>
+  	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  				<nav class="navbar navbar-fixed-top" role="navigation">
+				  <div class="container">
+				  	<div class = "row">
+				  		<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				  			<div class="navbar_top_left">
+				  				<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp;布瑞特
+							</div>
+							<div class="navbar_top_middle">
+								<span><a href="index.html">首页</a></span>
+								<span><a href="method.html">方案</a></span>
+								<span><a href="need.html">需求</a></span>
+							</div>
+							<div class="navbar_top_right">
+								<div style="float: left;"><button type="button" class="btn btn-warning btn-sm">发布</button></div>
+								<div class="person_popover">
+									<div class="button_person" data-placement="bottom" data-toggle="popover" data-html="true"
+										 data-content="<div class='person_index'>
+										 				  <div class='person_index_my' onclick='person()'><span class='glyphicon glyphicon-user' aria-hidden='true'></span>&nbsp;我的主页</div>
+										 				  <div class='person_index_my' onclick='person()'><span class='glyphicon glyphicon-comment' aria-hidden='true'></span>&nbsp;消息&nbsp;<span class='badge'>8</span></div>
+										 				  <div class='person_index_my' onclick='personsetting()'><span class='glyphicon glyphicon-cog' aria-hidden='true'></span>&nbsp;设置</div>
+										 				  <div class='person_index_my' onclick='exit()'><span class='glyphicon glyphicon-off'></span>&nbsp;退出</div>
+										 			  </div>">
+										<img src="image/man.jpg" class="img-circle">
+										<span>谢永兵&nbsp;</span>
+										<span class="badge">8</span>
+									</div>
+								</div>
+								<div class="button_login" style="display: none;">
+									<button type="button" class="btn btn-success btn-xs" onclick="login()">登录</button>
+									<button type="button" class="btn btn-warning btn-xs" onclick="register()">注册</button>
+								</div>
+							</div>
+				  		</div>
+				  	</div>
+				  </div>
+				</nav>
+				<div class="index_middle" align="center">
+					<div class="index_middle_main">
+						<div class="index_middle_main_left">
+							<div class="personal_left">
+								<div class="personal_left_head">
+									<img src="image/man.jpg" alt="..." class="img-thumbnail">
+									<br>
+									<label>fashion.jdk</label>
+								</div>
+								<div class="personal_left_order">
+									<div class="personal_left_setting">
+										<div class="personal_left_ordermsg" onclick="personsetting()"><span class="glyphicon glyphicon-cog" aria-hidden='true'></span>个人设置</div>
+									</div>
+									<div class="personal_left_method">
+										<div class="personal_left_ordermsg"><span class="glyphicon glyphicon-book" aria-hidden='true'></span>方案管理</div>
+									</div>
+									<div class="personal_left_need">
+										<div class="personal_left_ordermsg"><span class="glyphicon glyphicon-th-large" aria-hidden='true'></span>需求管理</div>
+									</div>
+									<div class="personal_left_comment">
+										<div class="personal_left_ordermsg"><span class="glyphicon glyphicon-comment" aria-hidden='true'></span>评论管理</div>
+									</div>
+									<div class="personal_left_comment">
+										<div class="personal_left_ordermsg"><span class="glyphicon glyphicon-bell" aria-hidden='true'></span>消息中心</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="personal_right">
+							<div class="personal_right_header">
+								<div class="personal_right_title">
+									<span class="glyphicon glyphicon-user" aria-hidden='true'></span>我的主页
+								</div>
+							</div>
+							<div class="personal_right_tab">
+							  <!-- Nav tabs -->
+							  <ul class="nav nav-tabs" role="tablist">
+							    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">我的关注</a></li>
+							    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">全部动态</a></li>
+							  </ul>
+							
+							  <!-- Tab panes -->
+							  <div class="tab-content">
+							    <div role="tabpanel" class="tab-pane active" id="home">
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">谢永兵</a>
+							    				<span>发表了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">谢永兵</a>
+							    				<span>发表了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">谢永兵</a>
+							    				<span>发表了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">谢永兵</a>
+							    				<span>发表了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">谢永兵</a>
+							    				<span>发表了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">谢永兵</a>
+							    				<span>发表了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">谢永兵</a>
+							    				<span>发表了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">谢永兵</a>
+							    				<span>发表了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    </div>
+							    <div role="tabpanel" class="tab-pane" id="profile">
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">段金明</a>
+							    				<span>评论了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">段金明</a>
+							    				<span>评论了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">段金明</a>
+							    				<span>评论了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">段金明</a>
+							    				<span>评论了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">段金明</a>
+							    				<span>评论了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">段金明</a>
+							    				<span>评论了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">段金明</a>
+							    				<span>评论了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    	<div class="mywatch">
+							    		<div class="mywatch_title">
+							    			<div class="mywatch_title_header">
+							    				<img alt="" src="image/book.jpg">
+							    				<a href="">段金明</a>
+							    				<span>评论了方案</span>
+							    				<a href="">关于电梯物联网的解决方案</a>
+							    			</div>
+							    			<div class="mywatch_title_date">
+							    				2016-3-30 22:00
+							    				<span class="glyphicon glyphicon-calendar text-success"></span>
+							    			</div>
+							    		</div>
+							    		<div class="mywatch_derc">
+							    			随着我国高层建筑的快速发展，对电梯安全性能和控制系统的要求越来越高，其相应的安全监视系统也要求更先进，
+							    			更可靠，更容易实现与互联网对接，从而实现电梯远程联网和监管的目的。  作为特种设备，每台电梯法定每月保养２次，
+							    			但真正能做到的却不多。其中存在的问题主要是：目前９０％以上电梯企业的售后维保、巡检方式，仅依靠一支笔、一张纸的方式进行
+							    			&nbsp;&hellip;&hellip;
+							    		</div>
+							    	</div>
+							    </div>
+							    <div>
+									<ul class="pagination">
+									    <li>
+									      <a href="#" aria-label="Previous">
+									        <span aria-hidden="true">&laquo;</span>
+									      </a>
+									    </li>
+									    <li><a href="#">1</a></li>
+									    <li><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">...</a></li>
+									    <li><a href="#">7</a></li>
+									    <li><a href="#">8</a></li>
+									    <li><a href="#">9</a></li>
+									    <li><a href="#">10</a></li>
+									    <li>
+									      <a href="#" aria-label="Next">
+									        <span aria-hidden="true">&raquo;</span>
+									      </a>
+									    </li>
+								   </ul>
+								</div>
+								<div class="index_bottom">
+									<span><font style="font-family: Tahoma;">©</font>&nbsp;2015-2016 www.buruitecms.com</span>
+									<br>
+				  					<span>成都布瑞特智能信息技术有限公司&nbsp;&nbsp;&nbsp;版权所有</span>
+				  				</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="back_to_top">
+	  		<a href="#" title="回到顶部"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+	  	</div>
+	</div>
+  </body>
+</html>
