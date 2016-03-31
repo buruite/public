@@ -83,4 +83,13 @@ a.list-group-item:hover, a.list-group-item:focus {color: #fff; text-decoration: 
 .mywatch_title_header a:hover{color: #eea236;text-decoration: underline;}
 .mywatch_title_date{float: right;padding-right: 50px;}
 .mywatch_derc{width: 100%;float: left;padding-left: 68px;font-size: 12px;padding-right: 50px;text-align: left;}
+.form-horizontal{margin-top: 20px;}
+.form-horizontal input{width: 250px;float: left;}
+.file_setting{float: left;margin-left: 20px;}
+.form-horizontal img{float: left;width: 125px;}
+.form-horizontal textarea{width: 250px;float: left;}
+.form-horizontal select{width: 150px;float: left;}
+#writemsg{float: left;margin-left: 10px;}
+#submit_msg{float: left;margin-left: 80px;width: 80px;}
+.setting_tab_content{height: 550px;}
 

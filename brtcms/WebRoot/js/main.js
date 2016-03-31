@@ -40,6 +40,17 @@ $(function(){
 			$(this).addClass("active");
 		}
 	});
+	//上传图片
+	$("input[type='file']").fileinput({
+		showUpload: false,
+		showCaption: false,
+		browseClass: "btn btn-primary btn-md",
+		allowedFileTypes:  ['image'],
+      	previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+      	browseLabel: "请选择图片",
+      	removeLabel: "删除",
+		previewSettings: {image: {width: "100px", height: "80px"}}
+	});
 	/*回到顶部*/
 	$(window).scroll(function(){  
         if ($(window).scrollTop()>500){  
