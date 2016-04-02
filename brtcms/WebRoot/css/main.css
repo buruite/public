@@ -92,4 +92,13 @@ a.list-group-item:hover, a.list-group-item:focus {color: #fff; text-decoration: 
 #writemsg{float: left;margin-left: 10px;}
 #submit_msg{float: left;margin-left: 80px;width: 80px;}
 .setting_tab_content{height: 550px;}
+.project_right_tab{width: 100%;}
+.project_right_tab button{width: 40px;margin-left: 5px;}
+.project_right_tab input{width: 180px;margin-left: 560px;float: left;height: 30px;padding: 5px 5px;}
+.project_right_table{min-height: 600px;margin-top: 10px;}
+.project_right_table table a:hover{color: #eea236;}
+.project_right_table table tbody td{font-size: 12px;}
+.project_right_table table tbody td span{padding: 5px 10px;cursor: pointer;}
+.project_right_table table tbody td .glyphicon-edit:hover{background-color: #4AA3DB;border-radius: 6px;color: #ffffff;}
+.project_right_table table tbody td .glyphicon-trash:hover{background-color: #d9534f;border-radius: 6px;color: #ffffff;}
 

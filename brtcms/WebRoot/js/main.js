@@ -81,6 +81,9 @@ function person(){
 function personsetting(){
 	window.location.href="mysetting.html";
 }
+function project(){
+	window.location.href="project.html";
+}
 function exit(){
 	alert("退出");
 }
