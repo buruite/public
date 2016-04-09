@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 .container-fluid{padding-right: 0px; padding-left: 0px;overflow: hidden;}
-body{font-family: Tahoma, Helvetica, "Microsoft Yahei", "微软雅黑", Arial, STHeiti;}
+body{font-family: Tahoma, Helvetica, "Microsoft Yahei", "微软雅黑", Arial, STHeiti;min-width: 1300px;}
 .navbar{background-color: #4AA3DB;max-height: 50px;min-height: 50px;}
 .navbar_top_left{color: #ffffff;font-size: 30px;line-height: 50px;float: left;}
 .navbar_top_left span{font-size: 18px;}
@@ -8,7 +8,7 @@ body{font-family: Tahoma, Helvetica, "Microsoft Yahei", "微软雅黑", Arial, S
 .navbar_top_middle span{margin-left: 25px;cursor: pointer;}
 .navbar_top_middle span a{text-decoration: none;color: #ffffff;}
 .navbar_top_middle span a:hover{color:#EE4000}
-.navbar_top_right{float: right;line-height: 50px;cursor: pointer}
+.navbar_top_right{float: right;line-height: 50px;cursor: pointer;width: 500px;}
 .button_person{cursor: pointer}
 .navbar_top_right{width: 300px;text-align: center;}
 .navbar_top_right button{margin-left: 10px;}

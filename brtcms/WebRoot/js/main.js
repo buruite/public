@@ -84,6 +84,12 @@ function personsetting(){
 function project(){
 	window.location.href="project.html";
 }
+function requirement(){
+	window.location.href="requirement.html";
+}
+function comment(){
+	window.location.href="comment.html";
+}
 function exit(){
 	alert("退出");
 }
