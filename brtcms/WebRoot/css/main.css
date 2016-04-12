@@ -101,4 +101,5 @@ a.list-group-item:hover, a.list-group-item:focus {color: #fff; text-decoration: 
 .project_right_table table tbody td span{padding: 5px 10px;cursor: pointer;}
 .project_right_table table tbody td .glyphicon-edit:hover{background-color: #4AA3DB;border-radius: 6px;color: #ffffff;}
 .project_right_table table tbody td .glyphicon-trash:hover{background-color: #d9534f;border-radius: 6px;color: #ffffff;}
+.tab-pane{min-height: 600px;}
 

@@ -90,6 +90,9 @@ function requirement(){
 function comment(){
 	window.location.href="comment.html";
 }
+function publish(){
+	window.location.href = "publish.html";
+}
 function exit(){
 	alert("退出");
 }
